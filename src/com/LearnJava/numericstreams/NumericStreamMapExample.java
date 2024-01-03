@@ -40,4 +40,4 @@ public class NumericStreamMapExample {
 
         System.out.println("mapToDouble : " + mapToDouble());
     }
-}
+}//
