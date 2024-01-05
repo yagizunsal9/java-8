@@ -10,7 +10,7 @@ public class SteramMapReduceExample {
        int noOfNotebooks = StudentDataBase.getAllStudents().stream()
                 .filter(student -> student.getGradeLevel()>=3)
                 .filter(student -> student.getGender().equals("female"))
-                .map(Student::getNotebooks)//Stream<Integer>
+                .map(Student::getNoteBooks)//Stream<Integer>
                 //.reduce(0,(a,b)-> a+b);
                .reduce(0,Integer::sum);
        return noOfNotebooks;
